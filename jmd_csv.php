@@ -4,7 +4,7 @@ $plugin = array(
     'author_uri' => 'http://jmdeldin.com',
     'description' => 'Batch-import articles from a CSV',
     'type' => 1,
-    'version' => '0.1',
+    'version' => '0.2',
 );
 
 if (0) {
