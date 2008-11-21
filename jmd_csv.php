@@ -187,13 +187,14 @@ class JMD_CSV
                 $insert = '';
                 foreach ($header as $key => $value)
                 {
+                    // escape all fields
+                    $csv[$key] = doSlash($csv[$key]);
                     if ($value === 'Title')
                     {
                         $url_title = stripSpace($csv[$key], 1);
                     }
                     if ($value === 'Body' || $value === 'Excerpt')
                     {
-                        $csv[$key] = doSlash($csv[$key]);
                         $insert .= "{$value}_html='{$csv[$key]}',";
                     }
                     $insert .= "{$value}='{$csv[$key]}',";
