@@ -27,16 +27,14 @@ if (txpinterface === 'admin')
     add_privs('jmd_csv', 1);
     register_callback('jmd_csv', 'jmd_csv');
     register_tab('extensions', 'jmd_csv', 'jmd_csv');
-
-    // i10n
-    $i10n = array(
+    // i18n
+    $textarray = array_merge($textarray, array(
         'jmd_csv_file' => 'CSV file:',
         'jmd_csv_file_error' => 'Error reading CSV',
         'jmd_csv_import' => 'Import',
         'jmd_csv_import_csv' => 'Import CSV',
         'jmd_csv_imported' => 'CSV imported successfully.',
-    );
-    $textarray = array_merge($textarray, $i10n);
+    ));
 }
 
 /**
