@@ -7,30 +7,12 @@ $plugin = array(
     'version' => '0.1',
 );
 
-if (!defined('txpinterface')) include_once '../zem_tpl.php';
-
 if (0) {
 ?>
 
 # --- BEGIN PLUGIN HELP ---
 
-h1. jmd_csv
-
-jmd_csv imports rows from CSV files as Textpattern articles.
-
-h2. Instructions
-
-# Create a file category, "jmd_csv"
-# Content>Files: Upload a file to the "jmd_csv" category
-# Extensions>jmd_csv: Click import
-
-h2. CSV template
-
-The plugin requires you specify a header row. An example header row:
-
-bc. Title, Body, Excerpt, Section, Category1, Category2, custom_1, custom_2, custom_3, custom_4, custom_5, custom_6, custom_7, custom_8, custom_9, custom_10
-
-Note: You may remove Category* and custom_*.
+//inc <README>
 
 # --- END PLUGIN HELP ---
 
